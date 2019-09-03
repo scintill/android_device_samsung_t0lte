@@ -2,21 +2,20 @@
 PRODUCT_RELEASE_NAME := t0lte
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_BOOTANIMATION_NAME := vertical-720x1280
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/replicant/config/nfc_enhanced.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Replicant stuff.
+$(call inherit-product, vendor/replicant/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lte
-PRODUCT_NAME := lineage_t0lte
+PRODUCT_NAME := replicant_t0lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N7105
 PRODUCT_MANUFACTURER := samsung

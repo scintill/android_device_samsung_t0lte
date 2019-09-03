@@ -26,7 +26,8 @@ BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_t0lte.txt
 # Camera
 COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 
-TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
+# enable llvmpipe
+BOARD_GPU_DRIVERS := swrast
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412

@@ -24,6 +24,3 @@
 # GPS
 BOARD_GPS_SET_PRIVACY := true
 
-# inherit from the proprietary version
--include vendor/samsung/t0lte/BoardConfigVendor.mk
-
